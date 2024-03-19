@@ -2,27 +2,27 @@ import math
 class Calculadora:
     def __innit__(self):
         pass
-    def somar(self, valor, valor2):
-        return valor + valor2
-    def subtrair(self, valor, valor2):
-        return valor - valor2
-    def multiplicar(self, valor, valor2):
-        return valor * valor2
-    def dividir(self, valor, valor2):
-        if valor2 != 0:
-            return valor / valor2
+    def somar(self, numero1, numero2):
+        return numero1 + numero2
+    def subtrair(self, numero1, numero2):
+        return numero1 - numero2
+    def multiplicar(self, numero1, numero2):
+        return numero1 * numero2
+    def dividir(self, numero1, numero2):
+        if numero2 != 0:
+            return numero1 / numero2
         else:
             return "Erro: Divisão por zero!"
-    def porcentagem(self, valor, porcentual):
-        return valor * (porcentual / 100)
+    def porcentagem(self, numero1, porcentual):
+        return numero1 * (porcentual / 100)
     def raiz_quadrada(self, valor):
         return math.sqrt(valor)
     def potenciacao(self, base, expoente):
         return base ** expoente
 
 
-
 calc = Calculadora()
+
 print("Soma:", calc.somar(5, 3))
 print("Subtração:", calc.subtrair(7, 2))
 print("Multiplicação:", calc.multiplicar(4, 6))
